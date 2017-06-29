@@ -159,11 +159,13 @@
 #pragma mark - Private
 
 - (void)initialize {
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged:) name:UITextViewTextDidChangeNotification object:self];
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged:)
+                                               name:UITextViewTextDidChangeNotification
+                                             object:self];
 }
 
 
-- (void)textChanged:(NSNotification *)notification {
+- (void)textChanged:(NSNotification __unused *)notification {
 	[self setNeedsDisplay];
 }
 
