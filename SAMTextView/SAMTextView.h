@@ -14,8 +14,8 @@
 @interface SAMTextView : UITextView
 
 /**
- The string that is displayed when there is no other text in the text view. This property reads and writes the
- attributed variant.
+ The string that is displayed when there is no other text in the text view. This property reads and 
+ writes the attributed variant.
 
  The default value is `nil`.
  */
